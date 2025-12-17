@@ -33,7 +33,7 @@ public class NewfileServiceImpl implements NewfileService{
         if(exist!=null){
             exist.setName(st.getName());
             exist.setEmail(st.getEmail());
-            return repo.(exist);
+            return repo.save(exist);
         }
         return null;
     }
