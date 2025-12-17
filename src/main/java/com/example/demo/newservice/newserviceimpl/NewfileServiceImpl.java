@@ -5,6 +5,10 @@ public class NewfileServiceImpl implements NewfileService{
 
     private final NewfileRepo repo;
     @Override
+    public NewfileServiceImpl(NewfileRepo repo){
+        this.repo = repo;
+    }
+    
     public NewFileEntity savedata(NewFileEntity st){
 
     }
