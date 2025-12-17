@@ -18,12 +18,12 @@ public class NewfileServiceImpl implements NewfileService{
 
     @Override
     public NewFileEntity getidval(Long id){
-        retri
+        return findById(id);
     }
 
     @Override
     public List<NewFileEntity> getalldata(){
-
+        return findAll();
     }
 
     @Override
