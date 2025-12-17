@@ -1,5 +1,8 @@
 import com.example.demo.newservice.NewfileServiceImpl;
+package com.example.demo.newservice;
 
+import com.example.demo.newentity.NewFileEntity;
+import java.util.*;
 
 public class NewfileServiceImpl implements NewfileService{
 
@@ -8,7 +11,7 @@ public class NewfileServiceImpl implements NewfileService{
     public NewfileServiceImpl(NewfileRepo repo){
         this.repo = repo;
     }
-    
+
     public NewFileEntity savedata(NewFileEntity st){
 
     }
