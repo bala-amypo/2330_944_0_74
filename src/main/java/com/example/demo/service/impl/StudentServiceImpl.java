@@ -3,6 +3,6 @@ import java.util.List;
 // import java.util.Optional;
 import com.example.demo.entity.StudentEntity;
 
-public class StudentService{
-    
+public class StudentServiceImpl implements StudentStudent{
+
 }
