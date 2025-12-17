@@ -5,6 +5,8 @@ import com.example.demo.entity.StudentEntity;
 
 
 public interface StudentService{
-    StudentEntity insertStudent(StudentEntity st);
-    List<StudentEntity>  getdata
+    StudentEntity postdata(StudentEntity st);
+    List<StudentEntity>  getdata();
+    StudentEntity updatedata(int id,StudentEntity st);
+    String deletedata(int id);
 }
