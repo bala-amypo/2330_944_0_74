@@ -28,7 +28,14 @@ public class NewfileServiceImpl implements NewfileService{
 
     @Override
     public NewFileEntity update(Long id,NewFileEntity st){
+        NewFileEntity exist = repo.findById(id).orElse(null);
 
+        if(exist!=null){
+            exist.setName(st.getName());
+            exist.setEmail(st.getEmail());
+            return repo.(exist);
+        }
+        return null;
     }
 
     @Override
