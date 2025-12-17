@@ -1,5 +1,5 @@
 import com.example.demo.newservice.NewfileServiceImpl;
-package com.example.demo.newservice.newserve;
+package com.example.demo.newservice.newserviceimpl;
 
 import com.example.demo.newentity.NewFileEntity;
 import java.util.*;
@@ -13,12 +13,12 @@ public class NewfileServiceImpl implements NewfileService{
     }
 
     public NewFileEntity savedata(NewFileEntity st){
-
+        return repo.save(st);
     }
 
     @Override
     public NewFileEntity getidval(Long id){
-
+        retri
     }
 
     @Override
