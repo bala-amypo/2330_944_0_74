@@ -14,12 +14,33 @@ public class NewFileEntity{
     @Email(message="Invalid message")
     private String email;
 
-    public NewFileEntity(){
+    public NewFileEntity(Long id,String name,String email){
         this.id = id;
         this.name = name;
         this.email = email;
     }
     
-    public Long setId
+    public Long getID(){
+        return id;
+    }
 
+    public void setId(Long id){
+        this.id = id;
+    }
+    
+    public String getName() {
+        return name;
+    }
+    
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return email;
+    }
+    
+    public void setName(String email) {
+        this.email = email;
+    }
 }
