@@ -15,9 +15,9 @@ import com.example.demo.newservice.NewfileService;
 @RestController
 public class NewFileController{
     @Autowired
-    Studentservice src;
+    NewfileService src;
     @PostMapping("/addStudent")
-    public Studententity addstudent(@RequestBody Studententity student){
+    public NewFileEntity addstudent(@RequestBody Studententity student){
 
         return src.saveStudentData(student);
     }
