@@ -40,6 +40,6 @@ public class NewfileServiceImpl implements NewfileService{
 
     @Override
     public void del(Long id){
-
+        repo.deleteById(id);
     }
 }
