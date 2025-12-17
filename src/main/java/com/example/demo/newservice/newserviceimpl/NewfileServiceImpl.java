@@ -13,5 +13,10 @@ public class NewfileServiceImpl implements NewfileService{
     }
 
     @Override
-    public List<NewFileEntity> get
+    public List<NewFileEntity> getalldata(){
+
+    }
+
+    @Override
+    public NewFileEntity update
 }
