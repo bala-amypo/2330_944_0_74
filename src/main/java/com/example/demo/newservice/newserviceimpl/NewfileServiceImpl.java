@@ -1,5 +1,5 @@
 import com.example.demo.newservice.NewfileServiceImpl;
-package com.example.demo.newservice;
+package com.example.demo.newservice.newserve;
 
 import com.example.demo.newentity.NewFileEntity;
 import java.util.*;
