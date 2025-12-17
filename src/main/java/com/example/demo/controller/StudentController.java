@@ -11,15 +11,15 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.demo.entity.Studententity;
-import com.example.demo.service.Studentservice;
+import com.example.demo.entity.StudentEntity;
+import com.example.demo.service.StudentService;
 
 @RestController
 public class StudentController {
     @Autowired
     StudentService src;
     @PostMapping("/addStudent")
-    public StudentEntity addstudent(@RequestBody Studententity student){
+    public StudentEntity addstudent(@RequestBody StudentEntity student){
 
         return src.saveStudentData(student);
     }
@@ -30,17 +30,17 @@ public class StudentController {
     }
     
     @GetMapping("/getStudentById/{id}")
-    public Studententity getIdVal(@PathVariable int id){
+    public StudentEntity getIdVal(@PathVariable int id){
         return src.retrieveStudentData(id);
     }
     
     @PutMapping("/updateStudentDate/{id}")
-    public Studententity updateStudentData(@PathVariable int id, @RequestBody Studententity student){
+    public StudentEntity updateStudentData(@PathVariable int id, @RequestBody StudentEntity student){
         return src.updateStudentData(id,student);
     }
 
     @DeleteMapping("/deleteStudents/{id}")
-    public Studententity deleteStudentData(@PathVariable int id){
+    public StudentEntity deleteStudentData(@PathVariable int id){
        return  src.deleteStudentData(id);
     }
 }
