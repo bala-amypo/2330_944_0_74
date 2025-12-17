@@ -14,5 +14,12 @@ public class NewFileEntity{
     @Email(message="Invalid message")
     private String email;
 
+    public NewFileEntity(){
+        this.id = id;
+        this.name = name;
+        this.email = email;
+    }
     
+    public Long setId
+
 }
