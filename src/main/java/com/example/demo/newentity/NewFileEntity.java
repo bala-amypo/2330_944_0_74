@@ -1,6 +1,10 @@
 package com.example.demo.newentity;
 
 public class NewFileEntity{
-    @id
+    @Id
     private Long id;
+    @NotBlank(message="S")
+    private String name;
+    @Common(name=unique)
+    private String email;
 }
